@@ -3,10 +3,6 @@ buildscript {
 		springBootVersion = '2.0.2.RELEASE'
 	}
 	repositories {
-		maven {
-			url "$artifactory_contexturl/$artifactory_repo"
-		}
-
 		mavenCentral()
 	}
 	dependencies {
@@ -24,10 +20,8 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-	maven { url "$artifactory_contexturl/$artifactory_repo" }
-
-//	mavenCentral()
-//	maven { url "https://repo.spring.io/milestone" }
+	mavenCentral()
+	maven { url "https://repo.spring.io/milestone" }
 }
 
 

@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    idp:
+      path: /auth/brand/**
+      url: ${stub.server.url}/auth/realms/
